@@ -12,7 +12,7 @@ zmodload zsh/datetime
 (( ${+LKWR_RIGHT_SEGMENTS} )) || typeset -ga LKWR_RIGHT_SEGMENTS=(duration error time)
 
 # --- Colors (names like "blue" or 256-color numbers like "31") ---------------
-: ${LKWR_CONTEXT_BG:=black}     ${LKWR_CONTEXT_FG:=250}
+: ${LKWR_CONTEXT_BG:=black}     ${LKWR_CONTEXT_FG:=default}
 : ${LKWR_CONTEXT_ROOT_BG:=black} ${LKWR_CONTEXT_ROOT_FG:=red}   # used when root
 : ${LKWR_PATH_BG:=blue}         ${LKWR_PATH_FG:=black}
 : ${LKWR_GIT_CLEAN_BG:=green}   ${LKWR_GIT_CLEAN_FG:=black}

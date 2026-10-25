@@ -98,7 +98,7 @@ or 256-color numbers (`0`–`255`).
 
 | Setting                        | Default BG | Default FG |
 | ------------------------------ | ---------- | ---------- |
-| `LKWR_CONTEXT_BG` / `_FG`      | `black`    | `250`      |
+| `LKWR_CONTEXT_BG` / `_FG`      | `black`    | `default`  |
 | `LKWR_CONTEXT_ROOT_BG` / `_FG` | `black`    | `red`      |
 | `LKWR_PATH_BG` / `_FG`         | `blue`     | `black`    |
 | `LKWR_GIT_CLEAN_BG` / `_FG`    | `green`    | `black`    |
