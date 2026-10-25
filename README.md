@@ -142,8 +142,9 @@ source $ZSH/oh-my-zsh.sh
 
 ## Notes
 
-- The theme sets `ZLE_RPROMPT_INDENT=0` so the right prompt touches the
-  terminal edge.
+- The right prompt keeps zsh's default 1-column gap to the terminal edge.
+  `ZLE_RPROMPT_INDENT=0` in `.zshrc` makes it touch the edge, but old prompt
+  lines then wrap and leave a mess when the terminal is made narrower.
 - `LKWR_CONTEXT_SHOW=remote` detects SSH via `$SSH_CONNECTION`, `$SSH_CLIENT`
   and `$SSH_TTY`. Inside tmux these come from the shell that started the tmux
   server, so a session started locally and attached over SSH counts as local.

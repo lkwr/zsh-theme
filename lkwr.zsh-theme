@@ -230,9 +230,6 @@ add-zle-hook-widget line-finish _lkwr_line_finish
 # Run first so $? is still the status of the user's command.
 precmd_functions=(_lkwr_precmd ${precmd_functions:#_lkwr_precmd})
 
-# Let the right prompt touch the right edge of the terminal.
-ZLE_RPROMPT_INDENT=0
-
 # The prompt only references the variables, so branch names etc. are never
 # evaluated as code under prompt_subst.
 PROMPT='${_lkwr_left}'
